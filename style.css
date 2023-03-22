@@ -1,0 +1,22 @@
+body{
+    min-height: 97dvh;
+    background-image: url(ceuestrelado.jpg);
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+.fundo{
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+header{
+    width: 100dvw;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.103);
+    display: flex;
+    align-items: center;
+}
+header img{
+    width: 400px;
+}
