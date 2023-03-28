@@ -1,22 +1,178 @@
-body{
-    min-height: 97dvh;
-    background-image: url(ceuestrelado.jpg);
-    background-size: cover;
+*{
     margin: 0px;
     padding: 0px;
 }
-.fundo{
-    width: 100dvw;
-    height: 100dvh;
-    background-color: rgba(0, 0, 0, 0.363);
+html{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(63, 63, 63);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(133, 133, 133);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid rgb(133, 133, 133);  /* creates padding around scroll thumb */
+  }
+@font-face {
+    font-family: 'blackops';
+    src: url(BlackOpsOne-Regular.ttf);
+}
+:root{
+    --fontetitulo: 'blackops', cursive;
+}
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
 }
 header{
-    width: 100dvw;
-    height: 100px;
-    background-color: rgba(255, 255, 255, 0.103);
+    background-color: white;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 99.4dvw;
+
+    position: fixed;
+    z-index: 1;
 }
 header img{
+    min-width: 20dvw;
+    max-width: 300px;
+}
+header nav{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 600px;
+}
+nav a{
+    color: rgb(10, 0, 66);
+    text-decoration: none;
+    padding: 21px 30px;
+    font-weight: bold;
+}
+nav a:hover{
+    background-color: rgba(146, 146, 146, 0.24);
+    background-image: linear-gradient(to bottom, rgba(146, 146, 146, 0.24), rgba(146, 146, 146, 0.24), rgba(146, 146, 146, 0.24), rgba(146, 146, 146, 0.24), rgba(146, 146, 146, 0.24), rgba(146, 146, 146, 0.24), rgba(146, 146, 146, 0.24), rgba(57, 0, 122, 0.884));
+    transition-duration: 0.5s;
+}
+main{
+
+    color: rgb(170, 170, 170);
+    font-size: 1.4em;
+    top: 60px;
+}
+main h1{
+    padding-left: 50px;
+    padding-top: 200px;
+    font-family: var(--fontetitulo);
+    font-size: 1.5em;
+}
+main p{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 200px;
+    text-align: justify;
+}
+section#zeroum{
+    background-image: url(ceuestrelado.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100dvh;
+    width: 99.4dvw;
+}
+div.astronauta{
+    background-image: url(astronauta2.png);
+    width: 99.4dvw;
+    min-height: 100dvh;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 35dvw;
+    display: flex;
+    align-items: center;
+
+}
+.fundo-preto{
+    background-color: rgba(0, 0, 0, 0.308);
+    height: 100dvh;
+    width: 99.4dvw;
+}
+section#zerodois{
+    background-image: linear-gradient(to bottom, #BAC7ED, #DAC5C5);
+    min-height: 100dvh;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section#zerodois img{
     width: 400px;
+    height: 400px;
+    padding: 50px;
+}
+section.texto{
+    padding-right: 50px;
+    max-width: 40dvw;
+}
+section#zerotres{
+    background-image: linear-gradient(to bottom, rgb(125, 125, 255), lightblue);
+    color: rgb(23, 0, 77);
+    justify-content: space-evenly;
+    min-height: 100dvh;
+    align-items: center;
+    min-width: 99.4dvw;
+}
+section#zerotres div#membros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#zerotres h1{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 60px;
+}
+#zerotres p{
+    display: inline-block;
+    padding: 0px;
+    font-size: 0.8em;
+}
+#zerotres h2, h3{
+    font-size: 0.8em;
+}
+div.bola{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-image: url(personas\ \(2\).jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 40px;
+}
+div.cadaum{
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+div.cadaum h2, h3, p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer{
+    background-color: rgb(70, 70, 70);
+    color: rgb(179, 166, 255);
+}
+footer > p{
+    text-align: center;
+    word-spacing: 10px;
+    padding: 10px 0px;
+    font-weight: bold;
+    font-size: 1.2em;
 }
